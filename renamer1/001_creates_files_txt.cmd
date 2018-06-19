@@ -1,0 +1,1 @@
+dir/s "RAW IMAGES" /b > files.txt

@@ -1,0 +1,56 @@
+<html>
+	<head>
+	<meta charset="UTF-8">
+		<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="renamer.js"></script>
+		<script type="text/javascript" src="FileSaver.min.js" ></script>
+		<script type="text/javascript" src="fabric.min.js" ></script>
+		<style>
+			#thumbs {
+				height: 50px;
+			}
+			#thumbs img {
+				height: 100%;
+				margin-right: 2px;
+			}
+			#namer input {
+				display: inline-block;
+				padding: 0px 2px;
+			}
+		</style>
+	</head>
+	<body>
+
+		<input type="file" onchange="previewFile()"><br>
+<img src="" height="200" alt="Image preview...">
+
+		<input type="file" id="filess" name="files" webkitdirectory multiple />
+<ul id="listing"></ul>
+
+		<input type="file" id="files" name="files"/>
+		<ul id="thumbs"></ul>
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<div id="namer">
+			<input id="gstId" placeholder="GST ID" size="6"/>
+			<input id="brandOwner" placeholder="BRAND OWNER" size="10"/>
+			<input id="templateNo" placeholder="TPL NO" maxlength="2" size="6"/>
+			<input id="retailerId" placeholder="STORE ID" maxlength="4" size="6"/>
+			<input id="date" placeholder="YYMMDD" maxlength="6" size="6"/>
+			<input id="pageNo" placeholder="PG NO" maxlength="2" size="6"/>
+			<input id="noOfLines" placeholder="NO LINES" maxlength="3" size="6"/>
+			<input id="amount" placeholder="AMOUNT" maxlength="6" size="6"/>
+			<!-- <input id="trf" placeholder="TRANSFER TO" /> -->
+			<button style="margin: 5px 0px" id="saveImage">SAVE FILE</button>
+		</div>
+		<div id='canvas-container' style='border: 2px solid black'>
+			<canvas id="imgModifier"></canvas>
+		</div>
+	</body>
+</html>

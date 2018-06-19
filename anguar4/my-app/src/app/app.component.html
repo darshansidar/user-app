@@ -1,0 +1,12 @@
+ <h1>{{title}}</h1>
+  <p>Users:</p>
+  <ul>
+    <li *ngFor=" let user of this.data">
+    	Name : {{user.firstName}} {{user.lastName}}<br>
+    	Email : {{user.email}}<br>
+        Mobile Number : {{user.mobile}}<br>
+        Type : {{user.type}}
+      <hr> 
+
+    </li>
+  </ul>
